@@ -1,0 +1,215 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Booksky</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Rich Dad poor Dad</h2>
+            <h5>Robert</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus, quia iste doloribus, commodi
+                asperiores non obcaecati sit voluptatem ut excepturi laboriosam! At pariatur nam omnis officia esse
+                perspiciatis voluptas.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Book Title" id="book-title-input">
+            <input type="text" placeholder="Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-describtion-input"></textarea>
+            <button id="add-book">ADD</button>
+            <button id="Cancel-popup">CANCEL</button>
+        </form>
+    </div>
+
+
+    <button class="add-button" id="add-popup-button">+</button>
+
+    <script src="script.js"></script>
+     
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tulasiraaman Ethiraj's Portfolio</title>
+<style>
+  /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding-bottom: 40px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+header {
+  background: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+  border-bottom: #e8491d 3px solid;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+}
+
+nav {
+  background: #35424a;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  background: #e8491d;
+  color: #ffffff;
+}
+
+section {
+  padding: 20px 0;
+  background: #ffffff;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #35424a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive styling */
+@media(max-width: 700px) {
+  header h1, nav a {
+    font-size: 20px;
+  }
+}
+
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Tulasiraaman Ethiraj</h1>
+    <p>Graduate from H.H. The Rajah's College (BCA), Pudukkottai</p>
+  </div>
+</header>
+<nav>
+  <div class="container">
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am an 18-year-old recent BCA graduate with a passion for web development. Though I have no formal work experience yet, I am eager to learn and grow in this field.</p>
+  </div>
+</section>
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <!-- Project 1 -->
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>Project Description</p>
+    </div>
+    <!-- Project 2 -->
+    <div class="project">
+      <h3>Project Title</h3>
+      <p>Project Description</p>
+    </div>
+    <!-- Add more projects as needed -->
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: tulasi28125@gmail.com</p>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p>© 2024 Tulasiraaman Ethiraj</p>
+  </div>
+</footer>
+<script>
+  // Smooth scrolling for nav links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Simple form validation for contact form
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Example validation logic for an email input
+  var email = document.getElementById('email').value;
+  if (!email || !email.includes('@')) {
+    alert('Please enter a valid email address.');
+    return false;
+  }
+  
+  // If the form is valid, you can send the form data using fetch or XMLHttpRequest
+  // For demonstration purposes, we'll just log to the console
+  console.log('Form submitted:', this);
+  alert('Thank you for your message!');
+});
+
+</script>
+</body>
+</html>
