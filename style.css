@@ -5,7 +5,7 @@ body {
     border-sizing: border-box;
     color: #333;
     background: #f8f9fd;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 a {
@@ -252,13 +252,9 @@ form input, form textarea, form button {
     width: 80%;
     padding: 0.8rem;
     margin-bottom: 1rem;
-    border: 1px solid #000000;
+    border: 1px solid gray;
     border-radius: 10px;
     transition: border-color 0.3s ease;
-}
-
-form input:focus, form textarea:focus {
-    border-color: #2575FC;
 }
 
 form button {
