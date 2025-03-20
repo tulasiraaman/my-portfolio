@@ -63,7 +63,7 @@ h1, h2, h3 {
     padding: 1rem 2rem;
     background: linear-gradient(135deg, #6A11CB, #2575FC); /* Gradient background */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: static;
     top: 0;
     z-index: 1000;
 }
