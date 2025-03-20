@@ -80,6 +80,13 @@ h1, h2, h3 {
   margin-right: 2rem; 
 }
 
+.hero-content span {
+  background: #ffd900;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
 .navbar div a {
   color: white;
   font-weight: 500;
