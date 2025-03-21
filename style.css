@@ -234,6 +234,7 @@ h2 {
   width: 30px;
   transform: scale(1.5);
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .social-links a i:hover {
